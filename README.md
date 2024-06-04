@@ -3,9 +3,7 @@
 1. 在 Elatic Beanstalk 中添加环境变量`NPM_USE_PRODUCTION`为`false`
 
 - 原因: 默认不安装 devDependencies，发现 npm run build 过程中 tailwind 报错
-- 参考[Configuring your application's dependencies
-
-  ](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-platform-dependencies.html)
+- 参考[Configuring your application's dependencies](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/nodejs-platform-dependencies.html)
 
 2. 在 `predeploy`步骤中执行`npm run build`
 
